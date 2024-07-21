@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function addTask() {
-        const taskText = taskInput.value.trim(); // This is the required method
+        const taskText = taskInput.value.trim(); // Retrieve and trim the value from the task input field
         if (taskText === "") {
             alert("Please enter a task.");
             return;
@@ -30,6 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         taskItem.appendChild(removeButton);
         taskList.appendChild(taskItem);
 
-        taskInput.value = "";
+        taskInput.value = ""; // Clear the task input field
     }
 });
