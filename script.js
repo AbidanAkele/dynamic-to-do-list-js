@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
             taskList.removeChild(li);
         };
 
-        li.appendChild(removeBtn);
-        taskList.appendChild(li);
+        li.classList.add(removeBtn);
+        taskList.classList.add(li);
 
         taskInput.value = '';
     }
